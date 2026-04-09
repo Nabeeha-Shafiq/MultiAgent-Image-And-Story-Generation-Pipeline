@@ -1,0 +1,24 @@
+{
+  "characters": [
+    {
+      "name": "Kael",
+      "traits": [
+        "determined",
+        "resourceful",
+        "skilled"
+      ],
+      "appearance": "Kael is a skilled and determined detective with a strong sense of justice",
+      "image_path": "./outputs/run_1775684297/image_assets/Kael.png"
+    },
+    {
+      "name": "Vex",
+      "traits": [
+        "resourceful",
+        "manipulative",
+        "dangerous"
+      ],
+      "appearance": "Vex is a cunning and elusive figure with a talent for evasion and deception",
+      "image_path": "./outputs/image_assets/Vex_mock.png"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "scenes": [
+    {
+      "scene_id": "Scene 1",
+      "location": "Busy Market",
+      "characters": [
+        "Rogue Agent",
+        "Market Vendor"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "I need to know where the device is, now!",
+          "visual_cue": "Rogue Agent grabs the Market Vendor's arm"
+        },
+        {
+          "speaker": "Market Vendor",
+          "line": "I don't know what you're talking about!",
+          "visual_cue": "Market Vendor tries to pull away"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "Don't play dumb, I have reason to believe it's hidden somewhere in this market",
+          "visual_cue": "Rogue Agent scans the surrounding area"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 2",
+      "location": "Market Alleyway",
+      "characters": [
+        "Rogue Agent",
+        "Suspicious Character"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "You're the one who's been seen lurking around here, what do you know?",
+          "visual_cue": "Rogue Agent corners the Suspicious Character"
+        },
+        {
+          "speaker": "Suspicious Character",
+          "line": "I don't know what you're talking about, I'm just a shopper",
+          "visual_cue": "Suspicious Character tries to hide something behind their back"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "Don't lie to me, I can see the fear in your eyes",
+          "visual_cue": "Rogue Agent takes a step closer to the Suspicious Character"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 3",
+      "location": "Market Storage Room",
+      "characters": [
+        "Rogue Agent"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "Yes, I've finally found it",
+          "visual_cue": "Rogue Agent discovers the explosive device"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "Now to disarm it... 5 minutes and counting",
+          "visual_cue": "Rogue Agent starts working on the device"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 4",
+      "location": "Busy Market",
+      "characters": [
+        "Rogue Agent",
+        "Market Vendors",
+        "Shoppers"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "Everyone get out, now! The device is going to detonate!",
+          "visual_cue": "Rogue Agent rushes out of the storage room, warning the crowd"
+        },
+        {
+          "speaker": "Market Vendors",
+          "line": "What's going on?",
+          "visual_cue": "Market Vendors and Shoppers start to panic"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "Just get out, I'll take care of it!",
+          "visual_cue": "Rogue Agent rushes back to the storage room"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 5",
+      "location": "Market Storage Room",
+      "characters": [
+        "Rogue Agent"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "Come on, come on... just a few more seconds",
+          "visual_cue": "Rogue Agent frantically works on the device"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "Yes! I did it!",
+          "visual_cue": "Rogue Agent successfully disarms the device"
+        }
+      ]
+    }
+  ]
+}

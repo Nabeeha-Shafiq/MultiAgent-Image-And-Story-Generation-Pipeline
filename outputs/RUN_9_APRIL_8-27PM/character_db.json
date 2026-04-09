@@ -1,0 +1,50 @@
+{
+  "characters": [
+    {
+      "name": "Rogue Agent",
+      "traits": [
+        "determined",
+        "aggressive",
+        "resourceful"
+      ],
+      "appearance": "athletic build, wearing a black suit",
+      "image_path": "./outputs/RUN_9_APRIL_8-27PM/image_assets/Rogue_Agent.png"
+    },
+    {
+      "name": "Market Vendor",
+      "traits": [
+        "nervous",
+        "submissive"
+      ],
+      "appearance": "middle-aged, wearing a vendor's apron",
+      "image_path": "./outputs/RUN_9_APRIL_8-27PM/image_assets/Market_Vendor.png"
+    },
+    {
+      "name": "Suspicious Character",
+      "traits": [
+        "deceptive",
+        "fearful"
+      ],
+      "appearance": "hooded figure, wearing dark clothing",
+      "image_path": "./outputs/image_assets/Suspicious_Character_mock.png"
+    },
+    {
+      "name": "Market Vendors",
+      "traits": [
+        "confused",
+        "panicked"
+      ],
+      "appearance": "various ages and clothing",
+      "image_path": "./outputs/image_assets/Market_Vendors_mock.png"
+    },
+    {
+      "name": "Shoppers",
+      "traits": [
+        "confused",
+        "scared"
+      ],
+      "appearance": "various ages and clothing",
+      "image_path": "./outputs/image_assets/Shoppers_mock.png"
+    }
+  ]
+}

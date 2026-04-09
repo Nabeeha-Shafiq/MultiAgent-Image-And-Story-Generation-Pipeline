@@ -1,0 +1,94 @@
+{
+  "scenes": [
+    {
+      "scene_id": "1",
+      "location": "Neon-lit cyberpunk alleyway",
+      "characters": [
+        "Kael",
+        "Vex"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Kael",
+          "line": "You're a hard man to find, Vex.",
+          "visual_cue": "Kael steps forward, his eyes fixed on Vex"
+        },
+        {
+          "speaker": "Vex",
+          "line": "And you're a hard program to crack, Kael.",
+          "visual_cue": "Vex smirks, his hand resting on the grip of his gun"
+        },
+        {
+          "speaker": "Kael",
+          "line": "I've been tracking you for weeks. You've been leaving a trail of digital breadcrumbs everywhere you go.",
+          "visual_cue": "Kael's eyes narrow, his gaze scanning the alleyway for any signs of backup"
+        },
+        {
+          "speaker": "Vex",
+          "line": "Maybe I wanted you to find me. Maybe I have a message for your corporate overlords.",
+          "visual_cue": "Vex takes a step forward, his gun now drawn and pointed at Kael"
+        }
+      ]
+    },
+    {
+      "scene_id": "2",
+      "location": "Neon-lit cyberpunk alleyway",
+      "characters": [
+        "Kael",
+        "Vex"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Kael",
+          "line": "I'm not here to listen to your threats, Vex. I'm here to bring you in.",
+          "visual_cue": "Kael draws his own gun, the two enemies facing off in the center of the alleyway"
+        },
+        {
+          "speaker": "Vex",
+          "line": "You'll never take me alive, Kael. I've got insurance. If I go down, the whole city goes down with me.",
+          "visual_cue": "Vex's eyes flicker to the side, a small drone hovering just out of sight"
+        },
+        {
+          "speaker": "Kael",
+          "line": "I'm not buying it, Vex. You're just trying to stall for time.",
+          "visual_cue": "Kael takes a step forward, his gun trained on Vex's chest"
+        },
+        {
+          "speaker": "Vex",
+          "line": "We'll see about that. Omega protocol, engage.",
+          "visual_cue": "The drone swoops into view, a high-pitched whine filling the air as it charges towards Kael"
+        }
+      ]
+    },
+    {
+      "scene_id": "3",
+      "location": "Neon-lit cyberpunk alleyway",
+      "characters": [
+        "Kael",
+        "Vex"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Kael",
+          "line": "No! Get back!",
+          "visual_cue": "Kael raises his gun, firing a shot that barely misses the drone as it zooms past his ear"
+        },
+        {
+          "speaker": "Vex",
+          "line": "You should have stayed out of this, Kael. Now you're just a liability.",
+          "visual_cue": "Vex turns to run, the drone providing cover as he sprints towards the end of the alleyway"
+        },
+        {
+          "speaker": "Kael",
+          "line": "I'll never let you get away, Vex! You're going down for this!",
+          "visual_cue": "Kael gives chase, his gun firing wildly as he pursues Vex through the winding alleys of the city"
+        },
+        {
+          "speaker": "Vex",
+          "line": "We'll see about that, detective. The city is mine now.",
+          "visual_cue": "Vex disappears into the crowd, the drone vanishing into the shadows as Kael is left standing alone, his gun still smoking"
+        }
+      ]
+    }
+  ]
+}

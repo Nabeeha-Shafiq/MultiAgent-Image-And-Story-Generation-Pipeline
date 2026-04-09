@@ -1,0 +1,104 @@
+{
+  "scenes": [
+    {
+      "scene_id": "Scene 1",
+      "location": "Busy Market",
+      "characters": [
+        "Rogue Agent",
+        "Market Vendor"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "I need to know where the device is, now!",
+          "visual_cue": "Rogue Agent grabs Market Vendor's arm"
+        },
+        {
+          "speaker": "Market Vendor",
+          "line": "I don't know what you're talking about!",
+          "visual_cue": "Market Vendor tries to break free"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "Don't play dumb, I have reason to believe it's hidden somewhere in this market.",
+          "visual_cue": "Rogue Agent scans the surrounding area"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 2",
+      "location": "Market Alleyway",
+      "characters": [
+        "Rogue Agent",
+        "Suspicious Character"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "You're the one who's been seen lurking around here, what do you know?",
+          "visual_cue": "Rogue Agent pins Suspicious Character against the wall"
+        },
+        {
+          "speaker": "Suspicious Character",
+          "line": "I don't know what you're talking about, let me go!",
+          "visual_cue": "Suspicious Character tries to struggle free"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "I don't have time for this, tell me where the device is or things will get ugly.",
+          "visual_cue": "Rogue Agent pulls out a gun"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 3",
+      "location": "Abandoned Warehouse",
+      "characters": [
+        "Rogue Agent",
+        "Main Villain"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Main Villain",
+          "line": "You're just in time to witness the detonation, Rogue Agent.",
+          "visual_cue": "Main Villain reveals the explosive device"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "You're not going to get away with this, I'll stop you before it's too late.",
+          "visual_cue": "Rogue Agent charges at Main Villain"
+        },
+        {
+          "speaker": "Main Villain",
+          "line": "We'll see about that, you're no match for me.",
+          "visual_cue": "Main Villain pulls out a gun and points it at Rogue Agent"
+        }
+      ]
+    },
+    {
+      "scene_id": "Scene 4",
+      "location": "Busy Market",
+      "characters": [
+        "Rogue Agent",
+        "Market Vendor"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Rogue Agent",
+          "line": "I did it, I stopped the device from detonating.",
+          "visual_cue": "Rogue Agent breathes a sigh of relief"
+        },
+        {
+          "speaker": "Market Vendor",
+          "line": "Thank you, Rogue Agent, you saved countless lives today.",
+          "visual_cue": "Market Vendor shakes Rogue Agent's hand"
+        },
+        {
+          "speaker": "Rogue Agent",
+          "line": "It's all in a day's work, but I couldn't have done it without your help.",
+          "visual_cue": "Rogue Agent smiles and walks away"
+        }
+      ]
+    }
+  ]
+}

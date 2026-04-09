@@ -1,0 +1,44 @@
+{
+  "characters": [
+    {
+      "name": "Rogue Agent",
+      "traits": [
+        "determined",
+        "resourceful",
+        "brave"
+      ],
+      "appearance": "athletic build, wearing a black suit",
+      "image_path": "./outputs/run_1775747778/image_assets/Rogue_Agent.png"
+    },
+    {
+      "name": "Market Vendor",
+      "traits": [
+        "friendly",
+        "helpful",
+        "nervous"
+      ],
+      "appearance": "middle-aged, wearing a traditional market vendor outfit",
+      "image_path": "./outputs/image_assets/Market_Vendor_mock.png"
+    },
+    {
+      "name": "Suspicious Character",
+      "traits": [
+        "suspicious",
+        "defensive",
+        "aggressive"
+      ],
+      "appearance": "tall, wearing a hoodie and sunglasses",
+      "image_path": "./outputs/image_assets/Suspicious_Character_mock.png"
+    },
+    {
+      "name": "Main Villain",
+      "traits": [
+        "power-hungry",
+        "manipulative",
+        "ruthless"
+      ],
+      "appearance": "well-dressed, with a confident smile",
+      "image_path": "./outputs/image_assets/Main_Villain_mock.png"
+    }
+  ]
+}
