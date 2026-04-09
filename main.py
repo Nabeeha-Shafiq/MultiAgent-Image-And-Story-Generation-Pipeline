@@ -98,7 +98,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     now = datetime.now()
-    run_id = f"RUN_{now.day}_{now.strftime('%B').upper()}_{now.strftime('%I:%M%p').lstrip('0')}"
+    run_id = f"RUN_{now.day}_{now.strftime('%B').upper()}_{now.strftime('%I-%M%p').lstrip('0')}"
     os.environ["RUN_ID"] = run_id
     
     start_mcp_server()
