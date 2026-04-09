@@ -9,6 +9,9 @@ IMAGE_MODE = os.getenv("IMAGE_MODE", "pollinations")  # mock | pollinations | co
 MAX_RETRIES = 3
 MODEL_NAME = "llama-3.3-70b-versatile"
 CHROMA_PERSIST_DIR = "./memory/chroma_db"
-RUN_ID = os.getenv("RUN_ID", f"run_{int(time.time())}")
+from datetime import datetime
+now = datetime.now()
+fallback_id = f"RUN_{now.day}_{now.strftime('%B').upper()}_{now.strftime('%I:%M%p').lstrip('0')}"
+RUN_ID = os.getenv("RUN_ID", fallback_id)
 OUTPUT_DIR = os.path.join(".", "outputs", RUN_ID)
 MCP_SERVER_URL = "http://localhost:8000"

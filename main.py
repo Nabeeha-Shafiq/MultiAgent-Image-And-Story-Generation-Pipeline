@@ -89,15 +89,15 @@ def build_graph():
     )
     return graph
 
-if __name__ == "__main__":
-    import time
     import argparse
+    from datetime import datetime
 
     parser = argparse.ArgumentParser(description="MultiAgent Story Pipeline")
     parser.add_argument("--prompt", type=str, help="The prompt for autonomous script generation.", default=None)
     args = parser.parse_args()
 
-    run_id = f"run_{int(time.time())}"
+    now = datetime.now()
+    run_id = f"RUN_{now.day}_{now.strftime('%B').upper()}_{now.strftime('%I:%M%p').lstrip('0')}"
     os.environ["RUN_ID"] = run_id
     
     start_mcp_server()

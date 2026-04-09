@@ -10,6 +10,8 @@ def image_node(state: State) -> State:
         name = char.get("name")
         appearance = char.get("appearance", "")
         if name:
+            import time
+            time.sleep(2.5)  # Throttle to avoid 429 Too Many Requests from Pollinations
             mcp_payload = {
                 "tool": "generate_character_image",
                 "input": {
