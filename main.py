@@ -136,9 +136,11 @@ if __name__ == "__main__":
     print("Generated Script Output:")
     pprint(current_state.values.get("script", {}))
     
-    # User review trigger for automated testing
-    user_decision = "APPROVE"
-    print("Auto-approving for test run.")
+    # User review trigger
+    print("\nPlease review the generated script above.")
+    user_decision = input("Type APPROVE to continue or REJECT to regenerate: ").strip()
+    if not user_decision:
+        user_decision = "APPROVE"
     
     # Second invoke resumes from checkpoint
     print("\n--- SECOND INVOKE (Resuming Graph) ---")
