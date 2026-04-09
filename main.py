@@ -89,6 +89,7 @@ def build_graph():
     )
     return graph
 
+if __name__ == "__main__":
     import argparse
     from datetime import datetime
 
