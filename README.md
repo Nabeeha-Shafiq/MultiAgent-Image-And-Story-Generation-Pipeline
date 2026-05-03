@@ -104,3 +104,5 @@ python main.py --real --all-scenes --prompt "A tense standoff in a neon-lit cybe
 ### Checking Quota
 * **Video Generation Quota**: Log into your Alibaba Cloud console manually.
 * **TTS Generation Quota**: Check the Google AI Studio usage dashboard.
+<img width="1874" height="1004" alt="image" src="https://github.com/user-attachments/assets/bba3ed36-9239-49e5-897e-23d90f72bbb9" />
+
