@@ -1,0 +1,155 @@
+[
+  {
+    "scene_id": "1",
+    "scene_description": "",
+    "visual_cue": "",
+    "environment": "",
+    "dialogues": [
+      {
+        "speaker": "Kael",
+        "line": "You're a hard man to find, Vex.",
+        "visual_cue": "Kael steps out of the shadows, his eyes glowing with a soft blue light"
+      },
+      {
+        "speaker": "Vex",
+        "line": "And you're a hard program to crack, Kael.",
+        "visual_cue": "Vex sneers, his face illuminated by the neon signs reflecting off the wet pavement"
+      },
+      {
+        "speaker": "Kael",
+        "line": "I've been tracking you for weeks. You've been leaving a trail of digital breadcrumbs all over the city.",
+        "visual_cue": "Kael's gaze narrows, his eyes scanning Vex's body for any signs of hidden weapons"
+      },
+      {
+        "speaker": "Vex",
+        "line": "Just trying to keep things interesting, detective.",
+        "visual_cue": "Vex chuckles, his hand resting on the grip of his holstered pistol"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Kael",
+        "traits": [
+          "determined",
+          "intelligent",
+          "skilled"
+        ],
+        "appearance": "glowing blue eyes",
+        "image_path": "./outputs/image_assets/Kael_mock.png"
+      },
+      {
+        "name": "Vex",
+        "traits": [
+          "sneering",
+          "unrepentant",
+          "dangerous"
+        ],
+        "appearance": "neon signs reflecting off his face",
+        "image_path": "./outputs/image_assets/Vex_mock.png"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "scene_id": "2",
+    "scene_description": "",
+    "visual_cue": "",
+    "environment": "",
+    "dialogues": [
+      {
+        "speaker": "Kael",
+        "line": "Interesting? You call sabotaging corporate servers and framing innocent people 'interesting'?",
+        "visual_cue": "Kael's voice rises, his words echoing off the alleyway walls"
+      },
+      {
+        "speaker": "Vex",
+        "line": "Innocent people? Ha! Everyone in this city is guilty of something.",
+        "visual_cue": "Vex shrugs, his expression unrepentant"
+      },
+      {
+        "speaker": "Kael",
+        "line": "That's not for you to decide. You're just a pawn in a much larger game, Vex.",
+        "visual_cue": "Kael takes a step closer to Vex, his eyes blazing with intensity"
+      },
+      {
+        "speaker": "Vex",
+        "line": "And what game is that, detective? The game of corporate espionage? Or the game of cat and mouse between you and me?",
+        "visual_cue": "Vex smirks, his hand tightening around the grip of his pistol"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Kael",
+        "traits": [
+          "determined",
+          "intelligent",
+          "skilled"
+        ],
+        "appearance": "glowing blue eyes",
+        "image_path": "./outputs/image_assets/Kael_mock.png"
+      },
+      {
+        "name": "Vex",
+        "traits": [
+          "sneering",
+          "unrepentant",
+          "dangerous"
+        ],
+        "appearance": "neon signs reflecting off his face",
+        "image_path": "./outputs/image_assets/Vex_mock.png"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "scene_id": "3",
+    "scene_description": "",
+    "visual_cue": "",
+    "environment": "",
+    "dialogues": [
+      {
+        "speaker": "Kael",
+        "line": "It's the game of justice, Vex. And I always get my man.",
+        "visual_cue": "Kael's eyes lock onto Vex, his gaze unwavering"
+      },
+      {
+        "speaker": "Vex",
+        "line": "We'll see about that, detective. You're not the only one with tricks up their sleeve.",
+        "visual_cue": "Vex's eyes flicker to the side, and a group of shadowy figures emerges from the darkness"
+      },
+      {
+        "speaker": "Kael",
+        "line": "You think a few hired guns are going to take me down? I've been preparing for this moment for a long time.",
+        "visual_cue": "Kael's body begins to glow with a soft blue light, his systems going into overdrive"
+      },
+      {
+        "speaker": "Vex",
+        "line": "We'll see about that, detective. Let's end this.",
+        "visual_cue": "Vex draws his pistol, and the shadowy figures move to surround Kael"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Kael",
+        "traits": [
+          "determined",
+          "intelligent",
+          "skilled"
+        ],
+        "appearance": "glowing blue eyes",
+        "image_path": "./outputs/image_assets/Kael_mock.png"
+      },
+      {
+        "name": "Vex",
+        "traits": [
+          "sneering",
+          "unrepentant",
+          "dangerous"
+        ],
+        "appearance": "neon signs reflecting off his face",
+        "image_path": "./outputs/image_assets/Vex_mock.png"
+      }
+    ],
+    "status": "pending"
+  }
+]

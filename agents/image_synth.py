@@ -31,7 +31,11 @@ def image_node(state: State) -> State:
                 char["image_path"] = data
             except Exception as e:
                 print(f"Failed to generate image for {name}: {e}. Creating mockup fallback.")
-                fallback_path = f"./outputs/image_assets/{name.replace(' ', '_')}_mock.png"
+                from config import OUTPUT_DIR
+                import os
+                image_dir = os.path.join(OUTPUT_DIR, "image_assets")
+                os.makedirs(image_dir, exist_ok=True)
+                fallback_path = os.path.join(image_dir, f"{name.replace(' ', '_')}_mock.png")
                 with open(fallback_path, "w") as f:
                     f.write("Mock Image Data Fallback")
                 generated_images.append({"name": name, "image_path": fallback_path})

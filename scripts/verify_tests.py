@@ -4,8 +4,9 @@ import sys
 
 def run_tests():
     print("--- Running Test Group 2: Script Generation ---")
-    manifest_path = "outputs/scene_manifest.json"
-    assert os.path.exists(manifest_path), "TC-SCRIPT-01 FAILED: outputs/scene_manifest.json does not exist."
+    from config import OUTPUT_DIR
+    manifest_path = os.path.join(OUTPUT_DIR, "scene_manifest.json")
+    assert os.path.exists(manifest_path), f"TC-SCRIPT-01 FAILED: {manifest_path} does not exist."
     
     with open(manifest_path, "r") as f:
         data = json.load(f)
@@ -38,10 +39,13 @@ def run_tests():
     print("TC-SCRIPT-01..04 PASSED: Script is healthy.")
     
     print("\n--- Running Test Group 6: Output Completeness ---")
-    assert os.path.exists("outputs/character_db.json"), "TC-OUT-01 FAILED: character_db.json missing."
-    assert os.path.isdir("outputs/image_assets"), "TC-OUT-01 FAILED: image_assets missing."
+    char_db_path = os.path.join(OUTPUT_DIR, "character_db.json")
+    image_dir_path = os.path.join(OUTPUT_DIR, "image_assets")
     
-    with open("outputs/character_db.json", "r") as f:
+    assert os.path.exists(char_db_path), f"TC-OUT-01 FAILED: {char_db_path} missing."
+    assert os.path.isdir(image_dir_path), f"TC-OUT-01 FAILED: {image_dir_path} missing."
+    
+    with open(char_db_path, "r") as f:
         db = json.load(f)
         
     assert "characters" in db, "TC-OUT-02 FAILED: missing characters array."
