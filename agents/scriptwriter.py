@@ -20,8 +20,13 @@ def scriptwriter_node(state: State) -> State:
         # 2. Act
         response = llm.invoke(messages)
         content = response.content.strip()
-        if content.startswith("```json"):
-            content = content[7:-3]
+        import re
+        json_match = re.search(r'\{.*\}', content, re.DOTALL)
+        if json_match:
+            content = json_match.group(0)
+        else:
+            print(f"[Scriptwriter] No JSON object found in response: {content}")
+            raise ValueError("No JSON object found in response")
             
         try:
             parsed_json = json.loads(content)
@@ -44,6 +49,7 @@ def scriptwriter_node(state: State) -> State:
             
         except Exception as e:
             # 5. Invalid -> retry with corrected prompt
+            print(f"[Scriptwriter] Attempt {attempt+1} failed: {e}")
             prompt += f"\nNote: Previous attempt failed with error: {str(e)}. Please ensure strict JSON generation."
             
     # Fallback to empty if fails
