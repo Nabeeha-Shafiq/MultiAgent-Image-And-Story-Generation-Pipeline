@@ -29,7 +29,7 @@ def start_mcp_server():
     import subprocess
     import atexit
     print("[Main] Starting local MCP Server subprocess...")
-    mcp_proc = subprocess.Popen([sys.executable, "-m", "uvicorn", "tools.mcp_server:app", "--port", "8000"])
+    mcp_proc = subprocess.Popen([sys.executable, "-m", "uvicorn", "tools.mcp_server:app", "--port", "8002"])
     time.sleep(2)
     atexit.register(mcp_proc.terminate)
     print("[Main] MCP Server started.")
@@ -120,8 +120,10 @@ def run_phase1(prompt: str):
     print("Generated Script Output:")
     pprint(current_state.values.get("script", {}))
     
-    print("\nUser review is auto-approved for E2E testing.")
-    user_decision = "APPROVE"
+    print("\nPlease review the generated script above.")
+    user_decision = input("Type APPROVE to continue or REJECT to regenerate: ").strip()
+    if not user_decision:
+        user_decision = "APPROVE"
     
     print("\n--- SECOND INVOKE (Resuming Graph) ---")
     graph.update_state(config, {"hitl_decision": user_decision})
@@ -140,8 +142,10 @@ def main():
                         help="Process all scenes (default: scene_01 only)")
     parser.add_argument("--model",      type=str, default=None,
                         help="Override WAN_VIDEO_MODEL env var")
-    parser.add_argument("--prompt",     type=str, default="A tense standoff in a neon-lit cyberpunk alleyway between a rogue AI detective named Kael and a corporate saboteur named Vex.",
-                        help="Prompt to generate story for Phase 1")
+    parser.add_argument("--prompt",     type=str, default=None,
+                        help="Prompt to generate story for Phase 1. Forces Phase 1 generation.")
+    parser.add_argument("--phase1-only", action="store_true",
+                        help="Only execute Phase 1 and exit.")
     args = parser.parse_args()
 
     if args.real:
@@ -158,9 +162,12 @@ def main():
     manifest_path = os.path.join(OUTPUT_DIR, "scene_manifest.json")
     char_db_path = os.path.join(OUTPUT_DIR, "character_db.json")
     
-    # Run Phase 1 if outputs don't exist
-    if not os.path.exists(manifest_path) or not os.path.exists(char_db_path):
-        if os.path.exists("outputs/scene_manifest.json") and os.path.exists("outputs/character_db.json"):
+    force_phase1 = args.prompt is not None or args.phase1_only
+    prompt_to_use = args.prompt if args.prompt else "A tense standoff in a neon-lit cyberpunk alleyway between a rogue AI detective named Kael and a corporate saboteur named Vex."
+
+    # Run Phase 1 if outputs don't exist OR if explicitly forced
+    if force_phase1 or not os.path.exists(manifest_path) or not os.path.exists(char_db_path):
+        if not force_phase1 and os.path.exists("outputs/scene_manifest.json") and os.path.exists("outputs/character_db.json"):
             import shutil
             os.makedirs(OUTPUT_DIR, exist_ok=True)
             shutil.copy("outputs/scene_manifest.json", manifest_path)
@@ -169,9 +176,14 @@ def main():
                 shutil.copytree("outputs/image_assets", os.path.join(OUTPUT_DIR, "image_assets"), dirs_exist_ok=True)
             print(f"\n[Main] Copied existing Phase 1 artifacts from outputs/ to {OUTPUT_DIR}")
         else:
-            run_phase1(args.prompt)
+            run_phase1(prompt_to_use)
     else:
         print(f"\n[Main] Phase 1 artifacts found in {OUTPUT_DIR}. Skipping Writer's Room.")
+
+    if args.phase1_only:
+        print("\n=== PHASE 1 COMPLETE (--phase1-only flag used) ===")
+        print(f"Artifacts written to {OUTPUT_DIR}/")
+        sys.exit(0)
 
     print(f"\n=== PHASE 2: STUDIO FLOOR | mode={mode} | wan_model={model} ===")
 
