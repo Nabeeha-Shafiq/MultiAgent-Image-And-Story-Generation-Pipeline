@@ -14,6 +14,7 @@ def _lip_sync_aligner_mock(inputs: dict) -> str:
         try:
             subprocess.run([
                 ffmpeg, "-y",
+                "-stream_loop", "-1",
                 "-i", video_path,
                 "-i", audio_path,
                 "-c:v", "copy", "-c:a", "aac",
