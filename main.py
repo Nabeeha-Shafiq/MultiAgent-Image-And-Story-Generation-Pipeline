@@ -176,6 +176,10 @@ def main():
                 shutil.copytree("outputs/image_assets", os.path.join(OUTPUT_DIR, "image_assets"), dirs_exist_ok=True)
             print(f"\n[Main] Copied existing Phase 1 artifacts from outputs/ to {OUTPUT_DIR}")
         else:
+            if not os.getenv("GROQ_API_KEY"):
+                print("\n[ERROR] GROQ_API_KEY is not set in your .env file or environment.")
+                print("Please add GROQ_API_KEY to your .env file to run Phase 1 (The Writer's Room).")
+                sys.exit(1)
             run_phase1(prompt_to_use)
     else:
         print(f"\n[Main] Phase 1 artifacts found in {OUTPUT_DIR}. Skipping Writer's Room.")
